@@ -2,12 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>Fruit App | Developer Akademie</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main>
+      <h1>Fruit App</h1>
+      <p>Fruit data provided by our Django backend.</p>
+
+      <section aria-labelledby="fruits-heading">
+        <h2 id="fruits-heading">Available Fruits</h2>
+        <ul id="fruit-list"></ul>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
