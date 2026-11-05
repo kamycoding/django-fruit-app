@@ -1,5 +1,9 @@
 # 🍊 Django Fruit App
 
+## Preview
+
+![Fruit App — Ubuntu Terminal UI](docs/images/fruit-app.png)
+
 Django serves a JSON API containing five fruits, while a separate TypeScript frontend fetches and displays the data in an Ubuntu terminal-inspired interface.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
