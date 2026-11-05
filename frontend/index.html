@@ -3,17 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit App | Developer Akademie</title>
+    <meta name="theme-color" content="#300a24" />
+    <title>Fruit App — Ubuntu Terminal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <main>
-      <h1>Fruit App</h1>
-      <p>Fruit data provided by our Django backend.</p>
 
-      <section aria-labelledby="fruits-heading">
-        <h2 id="fruits-heading">Available Fruits</h2>
-        <ul id="fruit-list"></ul>
-      </section>
+  <body>
+    <main class="terminal">
+      <header class="terminal-header">
+        <div class="terminal-title">
+          <span class="terminal-path">~/projects/fruit-app</span>
+        </div>
+        <div class="window-controls" aria-hidden="true">
+          <span class="ctrl-btn">_</span>
+          <span class="ctrl-btn">□</span>
+          <span class="ctrl-btn ctrl-close">✕</span>
+        </div>
+      </header>
+
+      <div class="terminal-body">
+        <p class="command">
+          <span class="arrow">❯</span>
+          <span class="directory">fruit-app</span>
+          <span class="branch">git:(main)</span>
+          <span>ls fruits/</span>
+        </p>
+
+        <p class="output">
+          <span class="success">✓</span>
+          <span>Fruit inventory</span>
+        </p>
+
+        <section aria-labelledby="fruits-heading">
+          <div class="section-title">
+            <h1 id="fruits-heading">FRUITS</h1>
+          </div>
+
+          <div class="table-header" aria-hidden="true">
+            <span>#</span>
+            <span>NAME</span>
+            <span>WEIGHT</span>
+            <span>COLOR</span>
+          </div>
+
+          <ul id="fruit-list"></ul>
+        </section>
+
+        <p class="bottom-prompt">
+          <span class="arrow">❯</span>
+          <span class="cursor" aria-hidden="true"></span>
+        </p>
+      </div>
+
+      <footer class="statusbar">
+        <span class="status-encoding">UTF-8</span>
+      </footer>
     </main>
 
     <script type="module" src="/src/main.ts"></script>
