@@ -33,8 +33,8 @@ Django serves a JSON API containing five fruits, while a separate TypeScript fro
 ```text
 django-fruit-app/
 ├── backend/
-│   ├── core/              # Django configuration
-│   ├── fruit_app/         # Fruit API
+│   ├── core/                 # Django configuration
+│   ├── fruit_app/            # Fruit API
 │   ├── manage.py
 │   └── requirements.txt
 ├── frontend/
@@ -44,6 +44,10 @@ django-fruit-app/
 │   │   └── style.css
 │   ├── index.html
 │   └── package.json
+├── docs/
+│   └── images/
+│       └── fruit-app.png     # Application screenshot
+├── .gitignore
 └── README.md
 ```
 
