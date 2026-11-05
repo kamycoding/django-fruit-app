@@ -166,5 +166,3 @@ npm run build
 Run each command from its respective project directory.
 
 ---
-
-<sub>Built for learning Django, TypeScript and frontend–backend integration.</sub>
